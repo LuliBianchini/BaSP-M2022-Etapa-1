@@ -1,4 +1,4 @@
-# RR COURSE "BECOME A SOFTWARE PROFESSIONAL" - WEEK 02 PROJECT
+# RR COURSE "BECOME A SOFTWARE PROFESSIONAL" PROJECT
 ![rocket-logo-883f208f5b6a41d21540cfecae22fa07](https://user-images.githubusercontent.com/101265774/160671603-5eb9f621-4c7a-49ca-92c8-b435c2c6960f.png)
 
 # Description of the project
@@ -17,7 +17,9 @@ It also includes a header, a footer and a sidebar
 In this repository you will find an HTML  file named "index" which contains the landing of a webpage and a folder labeled "Assets" where all the image files are stored.
 
 ## Progress
-Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. 
+Semana 1: It was created in Figma a prototype of how it would look the structure and the layout of the project requested.
+Semana 2: It was created an "index" file where the landing page would be arranged. Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. 
+Semana 3: The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company.
 
 ## Authors
 Lucía Bianchini
