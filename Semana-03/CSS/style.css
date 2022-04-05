@@ -54,6 +54,13 @@ aside {
     border-style: none;
 }
 
+.navbar i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 12px;
+    pointer-events: none;
+}
+
 .login {
     margin-top: 20px;
     color: #ffffff;
@@ -67,8 +74,6 @@ aside {
     border-style: none;
 }
 
-
-
 .signup {
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -78,8 +83,7 @@ aside {
     background-color: #373867;
     border-color: #373867;
     border-radius: 11.24px;
-    border-style: none;
-    
+    border-style: none;   
 }
 
 .aside-text {
@@ -95,7 +99,7 @@ aside {
 .aside-text a {
     text-decoration: none;
     color: #373867;
-    line-height: 17.57px ;
+    line-height: 30px ;
 
 }
 .aside-line {
@@ -133,6 +137,18 @@ aside {
     height: 294px;
     background:none;
     text-align: left;
+}
+
+.learn-more { 
+    width: 81.97px;
+    height: 25.99px;
+    border-radius: 3.75px;
+    font-family:'Roboto', sans-serif;
+    font-size: 8.99px;
+    font-weight:500;
+    background-color: #aace9b;
+    text-decoration: none;
+    text-align:center; 
 }
 
 .homepage-graphics {
@@ -190,7 +206,6 @@ aside {
     top: 110.16px;
     left: 500.41px;
     line-height: 30px;
-
 }
 
 .features-section span {
@@ -325,21 +340,6 @@ aside {
     opacity: 50%;
 }
 
-.learn-more { 
-    position: relative;
-    width: 81.97px;
-    height: 25.99px;
-    padding: 7px, 18px, 7px, 18px;
-    border-radius: 3.75px;
-    font-family:'Roboto', sans-serif;
-    font-size: 8.99px;
-    font-weight:500;
-    background-color: #aace9b;
-    text-decoration: none;
-    text-align:center;
-    
-}
-
 .contact-section h2 {
     color: #373867;
     font-family:'Roboto', sans-serif;
@@ -433,7 +433,6 @@ aside {
     border-style: none;
 }
 
-
 .bottom-section {
     font-family:'Roboto', sans-serif;
     margin-top: 150px;
@@ -446,7 +445,6 @@ aside {
 }
 
 .bottom-section h2 {
-    
     padding: 40px 0px 0px 100px;
     font-size: 29.98px;
     font-weight: 700;
@@ -468,7 +466,6 @@ aside {
 }
 
 .bottom-list ol a {
-    
     font-family: 'Roboto', sans-serif;
     font-size: 14.99px;
     font-weight: 400;
