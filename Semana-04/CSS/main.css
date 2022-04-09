@@ -1,0 +1,243 @@
+
+/*section {
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}*/
+
+.homepage-section a, .reasons-section a {
+    width: 60px;
+    height: 20px;
+    padding: 7px, 18px, 7px, 18px; 
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    color: #373867;
+    text-decoration: none;
+    text-align: center;
+}
+
+section {
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+/*     border-bottom: 3.75px solid #373867; */
+}
+
+h3 {
+    font-weight: 700;
+}
+/************************************************HOMEPAGE SECTION*******************************************/
+
+.line {
+    width: 400px;
+    border-top: 3.75px solid #373867
+}
+.homepage-section {
+   display: flex;
+   flex-direction: column;
+}
+
+.homepage-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #49A37B;
+    text-transform: capitalize;
+    border-bottom: 0px;
+}
+.homepage-section p {
+    width: 400px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.homepage-1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.homepage-1 img {
+    margin-top: 20px;
+    width: 330px;
+    height: 190px;
+
+}
+
+.homepage-2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+.homepage-2 img {
+    margin-top: 20px;
+    width: 330px;
+    height: 170px;
+}
+
+/************************************************FEATURES SECTION*******************************************/
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 350px; */
+}
+
+.features-section p{
+    text-align: center;
+    width: 400px;
+}
+
+.features-section ul {
+    width: 400px;
+    font-size: 14px; 
+    line-height: 22px; 
+    list-style-type: disc;
+}
+
+.features-section span {
+    font-weight: 700;
+}
+/*.features-section {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}*/
+
+/*.features-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;*/
+
+
+
+
+/************************************************REASONS SECTION*******************************************/
+
+.reasons-section {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.reasons-section img {
+    width: 225.05px;
+    height: 115.4px;
+    border-radius: 17px;
+}
+
+
+.reasons-blocks{
+    width: 400px;
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+
+    /* border-bottom: 0.75px solid #373867; */
+}
+
+.reasons-lines {
+    width: 300px;
+    border: 0.75px solid #373867;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+
+/************************************************CONTACT SECTION*******************************************/
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+
+}
+.send {
+    width: 120px;
+    height: 35px;
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.reset {
+    width: 80px;
+    height:35px;
+    background-color: #dadada;
+    border-radius: 3.75px;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;   
+    align-items:flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contact-items {
+    width: 400px
+}
+
+.contact-buttons {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+
+
+
+
+/************************************************BOTTOM SECTION*******************************************/
+
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #373867;
+    opacity: 80%;
+    color: #ffffff;
+} 
+
+.bottom-section h2 {
+    display: none
+}
+
+.bottom-list ol {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.bottom-list a {
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 22.48px;
+    color: #ffffff;
+}
+
+.bottom-list h3 {
+    font-size: 12px;
+}

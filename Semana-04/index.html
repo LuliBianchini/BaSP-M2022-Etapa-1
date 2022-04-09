@@ -5,6 +5,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="CSS/reset.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="stylesheet" href="CSS/sidebar.css">
+        <link rel="stylesheet" href="CSS/footer.css">
         <link rel="stylesheet" href="CSS/style.css">
         <script src="https://kit.fontawesome.com/a45c2b6d49.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
@@ -14,145 +18,145 @@
             Trackgenix
         </title>
     </head>
-    <body>
+    <body> 
         <header>
+            <i class="fa-solid fa-bars"></i>
             <h1>
                 Trackgenix SA
             </h1>
-            <div class="header-line">
+            <div>
             </div>
         </header>
         <aside>
-            <div class="navbar">
-                <input class="nav-bar" type="search" placeholder="Search.."> 
+            <div class="nav-bar">
+                <input type="search" placeholder="Search.."> 
             </div>
-                <p>
-                    <button class="login" type="button">LOG IN</button> 
-                    <button class="signup" type="button">SIGN UP</button>
-                </p>
+            <div class= "buttons">
+                <a href="login.html" target="_blank">Log In</a>
+                <a href="signup.html" target="_blank">Sign Up</a>
             </div>
-            <div class="aside-text">
+            <div class="aside-content">
                 <h2>
-                    MENU
+                    Menu
                 </h2>
                 <div class="aside-line">
                 </div>
-                <p>
-                    <a href="#homepage">
+                <ul>
+                    <li>
+                        <a href="#homepage">
                         Homepage
-                    </a>
-                </p>
-                <p>
-                    <a href="#generic">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features">
                         Features
-                    </a>
-                </p>
-                <p>
-                    <a href="#why">
-                        Why Trackgenix
-                    </a>
-                <p>
-                    <a href="#contact">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#reasons">
+                            Why Trackgenix
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
                         Contact us
-                    </a>
-                </p>
+                        </a>
+                    </li>
+                </ul>
                 <h2>
-                    GET IN TOUCH
+                    Get in touch
                 </h2>
                 <div class="aside-line">
                 </div>
-                <p>
-                    <a href= "mail">
-                    <i class="fa-solid fa-envelope"></i>mailinfo@trackgenix.com
+                <ul>
+                    <li>
+                        <a href= "mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        mailinfo@trackgenix.com
+                        </a>
+                    </li>
+                    <li>
+                        <a href= "phone">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        123-456789
                     </a>
-                </p>
-                <p>
-                    <a href= "phone">
-                    <i class="fa-solid fa-phone-flip"></i>123-456789
-                    </a>
-                </p>
-                <p>
-                    <a href="adress">
-                    <i class="fa-solid fa-house"></i>123 fake road #2000 Rosario, Argentina
+                    </li>
+                    <li>
+                        <a href="adress">
+                        <i class="fa-solid fa-house"></i>
+                        123 Fake Road #2000 Rosario, Argentina
                     </a> 
-                </p>
+                    </li>
+                </ul>
             </div>
         </aside>
-        <section>
-            <div class="homepage-section">
-                <div class="homepage-section-one">
-                <h2 id="homepage">
-                    What is Trackgenix
-                </h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book.
-                </p>
+        <main>
+            <section class="homepage-section">
+                <div class="homepage-1">
+                    <h2 id="homepage">
+                        What is Trackgenix
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas voluptatibus qui non
+                        corrupti unde iusto rem, maiores libero asperiores ullam quos! Perferendis consequuntur
+                        consectetur illum tempore? Expedita quod impedit, sint qui odio facilis eum modi maiores
+                        recusandae nostrum similique illum architecto ab dolore ipsum, dolores aut accusamus quam
+                        nesciunt numquam ducimus cumque quasi. Neque placeat quae exercitationem laboriosam dolorum
+                        pariatur, itaque eius officiis dicta rerum assumenda ratione aspernatur.
+                    </p>
+                    <img src="Assets/graphics.png" alt="graphics">
                 </div>
-                <div class="homepage-graphics">
-                <img src="Assets/graphics.png" alt="graphics">
-                </div>
-                <div class="homepage-meeting">
-                <img src="Assets/meeting.png" alt="meeting">
-                </div>  
-                <div class="homepage-section-two">
-                <h2 id="history">
-                    Our History
-                </h2>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                    the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
-                    type and scrambled it to make a type specimen book.
-                </p>
+                <div class="homepage-2">
+                    <h2>
+                        Our History
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati distinctio quis iste
+                        aspernatur error eos tenetur magnam atque quos. Officia non minus cum? Distinctio expedita
+                        tempora quas, nisi ut officia?
+                    </p>
                     <a href="learn-more.html" target="_blank">
-                        Learn More
-                    </a>
+                    Learn More
+                    </a> 
+                    <img src="Assets/meeting.png" alt="meeting">  
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="features-section">
-                <h2 id="generic">
-                    FEATURES
+            </section>
+            <section class="features-section">
+                <h2 id="features">
+                    Features
                 </h2>
-                <div class="features-line">
+                <div class="line">
                 </div>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                        galley of type and scrambled it to make a type specimen book.
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus ex sequi, sed
+                        consectetur fugit nostrum iusto quis totam explicabo doloribus aperiam, quia officiis quaerat
+                        nihil fuga, harum odio? Amet, harum!
                     </p>
                     <ul>
                         <li>
-                            <span> Item 1:</span> Lorem ipsum is simply dummy text of the printin
+                            <span>Item 1:</span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                         </li>
                         <li>
-                            <span>Item 2:</span> Lorem ipsum is simply dummy text of the printin
+                            <span>Item 2:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                         </li>
                         <li>
-                            <span>Item 3:</span> Lorem ipsum is simply dummy text of the printin
+                            <span>Item 3:</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                         </li>
                         <li>
-                            <span>Item 4:</span> Lorem ipsum is simply dummy text of the printin
+                            <span>Item 4:</span> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
                         </li>
                         <li>
-                            <span>Item 5:</span> Lorem ipsum is simply dummy text of the printin
+                            <span>Item 5:</span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </li>
                     </ul>
-            </div>
-        </section>
-        <section>
-            <div class="reasons-section">
-                <h2 id="why">
-                    WHY TRACKGENIX?
+            </section>
+            <section class="reasons-section">
+                <h2 id="reasons">
+                    Why Trackgenix?
                 </h2>
-                <div class="reasons-line">
+                <div class="line">
                 </div>
-                <div class="reasons-one"> 
+                <div class="reasons-blocks"> 
                     <h3>
                         Subheader
                     </h3>
@@ -160,18 +164,14 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.
                     </p>
-                    <div>
-                        <a  href="learn-more.html" target="_blank">
-                            Learn More
-                        </a>
-                    </div>
+                    <a  href="learn-more.html" target="_blank">
+                        Learn More
+                    </a>   
+                    <img id="computer" src="Assets/computer.jpg" alt="computer">     
                 </div>
-                    <div class="reasons-lines">
-                    </div>
-                <div class="reasons-computer">
-                    <img id="computer" src="Assets/computer.jpg" alt="computer">
-                </div>                        
-                <div class="reasons-two">
+                <div class="reasons-lines">
+                </div>
+                <div class="reasons-blocks">
                     <h3>
                         Subheader
                     </h3>
@@ -179,18 +179,14 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.
                     </p>
-                    <div>
-                        <a href="learn-more.html" target="_blank">
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-                    <div class="reasons-lines">
-                    </div>
-                <div class="reasons-office">
+                    <a href="learn-more.html" target="_blank">
+                        Learn More
+                    </a> 
                     <img id="office" src="Assets/office.jpg" alt="office">
                 </div>
-                <div class="reasons-three">
+                <div class="reasons-lines">
+                </div>
+                <div class="reasons-blocks">
                     <h3>
                         Subheader
                     </h3>
@@ -198,18 +194,14 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.
                     </p>
-                    <div>
-                        <a href="learn-more.html" target="_blank" >
-                            Learn More
-                        </a>
-                    </div>
-                </div>
-                    <div class="reasons-lines">
-                    </div>
-                <div class="reasons-brainstorming">
+                    <a href="learn-more.html" target="_blank" >
+                        Learn More
+                    </a>
                     <img id="brainstorming" src="Assets/brainstorming.jpg" alt="brainstorming">
                 </div>
-                <div class="reasons-four">
+                <div class="reasons-lines">
+                </div>
+                <div class="reasons-blocks">
                     <h3>
                         Subheader
                     </h3>
@@ -217,196 +209,189 @@
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                         industry's standard dummy text ever since the 1500s.
                     </p>
-                    <div>
-                        <a href="learn-more.html" target="_blank" >
-                            Learn More
-                        </a>
-                    </div>
+                    <a href="learn-more.html" target="_blank" >
+                        Learn More
+                    </a>
+                    <img id="team" src="Assets/team.jpg" alt="team">
                 </div>
-                    <div class="reasons-lines">
-                    </div>
-                <div class="reasons-team">
-                <img id="team" src="Assets/team.jpg" alt="team">
+                <div class="reasons-lines">
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="contact-section">
+                </div>
+            </section>
+            <section class="contact-section">
                 <h2 id="contact">
-                    CONTACT US
+                    Contact us
                 </h2>
-                <div class="contact-line">
-                </div>
-                <form action="process.php" method="post">
+                <div class="line"></div>
+                <form>
                     <div>
-                       <label for="name">
-                            Name
-                        </label>
-                        <p>
-                            <input type="text" name="Name" placeholder="Insert your name">
-                        </p>
+                        <div>
+                            <label for="name">
+                                Name
+                            </label>
+                        </div>
+                        <input class="contact-items" type="text" name="Name" placeholder="Insert your name">
                     </div>
                     <div>
-                        <label for="email">
-                            Email
-                        </label>
-                        <p>
-                            <input type="email" name="Email" placeholder="Insert your email">
-                        </p>
+                        <div>
+                            <label for="email">
+                                Email
+                            </label>
+                        </div>
+                        <input class="contact-items" type="email" placeholder="Insert your email">
                     </div>
                     <div>
-                        <label for="contactarea">
-                            Contact area
-                        </label>
-                        <p>
-                            <select name="contact-area" id="contact-area">
-                                <option 
-                                value="option">
-                                Option
-                                </option>
-                                <option 
-                                value="human-resources">
-                                Human Resources
-                                </option>
-                                <option
-                                value="finances">
-                                Finances
-                                </option>
-                                <option 
-                                value="management">
-                                Management
-                                </option>
-                                <option 
-                                value="marketing-sales">
-                                Marketing/Sales
-                                </option>
-                                <option 
-                                value="research-development">
-                                Research and Development
-                                </option>
-                            </select>
-                        
-                        </p>    
+                        <div>
+                            <label for="category">
+                                Category
+                            </label>
+                        </div>
+                        <select class="contact-items" name="contact-area" id="contact-area">
+                            <option 
+                            value="option">
+                            Option
+                            </option>
+                            <option 
+                            value="human-resources">
+                            Human Resources
+                            </option>
+                            <option
+                            value="finances">
+                            Finances
+                            </option>
+                            <option 
+                            value="management">
+                            Management
+                            </option>
+                            <option 
+                            value="marketing-sales">
+                            Marketing/Sales
+                            </option>
+                            <option 
+                            value="research-development">
+                            Research and Development
+                            </option>
+                        </select> 
                     </div>
                     <div>
-                        <label for="message">
-                            Message
-                        </label>
-                        <p>
-                            <textarea 
+                        <div>
+                            <label for="message">
+                                Message
+                            </label>
+                        </div>
+                        <textarea class="contact-items"
                             name="write" id="write" cols="30" rows="10">Write us a message...
-                            </textarea>
-                        </p>
+                        </textarea>
                     </div>
-                    <button class="send" type="button">Send Message</button>
-                    <button class="reset" type="button">Reset</button>
+                    <div class="contact-buttons">
+                        <button class="send" type="button">Send Message</button>
+                        <button class="reset" type="button">Reset</button>
+                    </div>
                 </form>
-        </div>
-        </section>
-        <section>
-        <div class="bottom-section">
-        <h2>
-            TRACKGENIX
-        </h2>
-            <div class="bottom-list">
-                <div>
+            </section>
+            <section class="bottom-section">
+                <h2>
+                    TRACKGENIX
+                </h2>
+                <div class="bottom-list">
                 <h3>
                     Products
                 </h3> 
-                        <ol>
-                            <li>
-                                <a href="features.html" target="_blank">
-                                    Features
-                                </a>
-                            </li>
-                            <li>
-                                <a href="downloads.html" target="_blank">
-                                    Downloads
-                                </a>
-                            </li>
-                            <li>
-                                <a href="integrations.html" target="_blank">
-                                    Integrations
-                                </a>
-                            </li>
-                            <li>
-                                <a href="extras.html" target="_blank">
-                                    Extras
+                    <ol>
+                        <li>
+                            <a href="features.html" target="_blank">
+                                Features
+                            </a>
+                        </li>
+                        <li>
+                            <a href="downloads.html" target="_blank">
+                                Downloads
+                            </a>
+                        </li>
+                        <li>
+                            <a href="integrations.html" target="_blank">
+                                Integrations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="extras.html" target="_blank">
+                                Extras
 
-                                </a>
-                            </li>
-                        </ol>
+                            </a>
+                        </li>
+                    </ol>
                 </div>
-                <div>
+                <div class="bottom-list">
                 <h3>
                     Company
                 </h3>
-                        <ol>
-                            <li>
-                                <a href="about-us.html" target="_blank">
-                                    About us
-                                </a>
-                            </li>
-                            <li>
-                                <a href="clients.html" target="_blank">
-                                    Clients
+                    <ol>
+                        <li>
+                            <a href="about-us.html" target="_blank">
+                                About us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="clients.html" target="_blank">
+                                Clients
 
-                                </a>
-                            </li>
-                            <li>
-                                <a href="resources.html" target="_blank">
-                                    Resources
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resources.html" target="_blank">
+                                Resources
 
-                                </a>
-                            </li>
-                            <li>
-                                <a href="blog.html" target="_blank">
-                                    Blog
-                                </a>
-                            </li>
-                        </ol>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="blog.html" target="_blank">
+                                Blog
+                            </a>
+                        </li>
+                    </ol>
                 </div> 
-                <div>
+                <div class="bottom-list">
                 <h3>
                     Support
                 </h3>
-                        <ol>
-                            <li>
-                                <a href="help.html" target="_blank">
-                                    Help
-                                </a>
-                            </li>
-                            <li>
-                                <a href="tutorials.html" target="_blank">
-                                    Tutorials
-                                </a>
-                            </li>
-                            <li>
-                                <a href="features.html" target="_blank">
-                                    API
-                                </a>
-                            </li>
-                            <li>
-                                <a href="contact.html" target="_blank">
-                                    Contact
-                                </a>
-                            </li>
-                        </ol>
+                    <ol>
+                        <li>
+                            <a href="help.html" target="_blank">
+                                Help
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tutorials.html" target="_blank">
+                                Tutorials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="features.html" target="_blank">
+                                API
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" target="_blank">
+                                Contact
+                            </a>
+                        </li>
+                    </ol>
                 </div>
-            </div>
-        </div>
-        </section>
+            </section>
+        </main>
         <footer>
-            <a href="https://twitter.com/?lang=en" target="_blank">
-            <img src="Assets/twitter-logo.png" alt="twitter"></a>
-            <a href="https://ar.linkedin.com/" target="_blank">
-            <img src="Assets/linkedin-logo.png" alt="linkedin"></a>
-            <a href="https://github.com/" target="_blank">
-            <img src="Assets/github-logo.png" alt="github"></a>
-            <a href="https://www.instagram.com/" target="_blank">
-            <img src="Assets/instagram-logo.png" alt="instagram"></a>
-            <a href="https://www.facebook.com/" target="_blank">
-            <img src="Assets/facebook-logo.png" alt="facebook"></a>
+            <div class="footer-icons">
+                <a href="https://twitter.com/?lang=en" target="_blank">
+                <i class="fa-brands fa-twitter"></i></a>
+                <a href="https://ar.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i></a>
+            </div>
             <p>
                 Rosario, Argentina
             </p>
