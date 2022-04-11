@@ -1,14 +1,12 @@
-
 /*section {
    display: flex;
    align-items: center;
    flex-direction: column;
 }*/
 
-.homepage-section a, .reasons-section a {
-    width: 60px;
-    height: 20px;
-    padding: 7px, 18px, 7px, 18px; 
+
+.reasons-section a, .homepage-section a {
+    padding: 3%;
     background-color: #aace9b;
     border-radius: 3.75px;
     font-family: 'Roboto', sans-serif;
@@ -19,29 +17,28 @@
     text-align: center;
 }
 
-section {
-    margin-top: 30px;
-}
-
 h2 {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-/*     border-bottom: 3.75px solid #373867; */
+    /*     border-bottom: 3.75px solid #373867;*/
 }
 
 h3 {
     font-weight: 700;
 }
+
 /************************************************HOMEPAGE SECTION*******************************************/
 
 .line {
-    width: 400px;
-    border-top: 3.75px solid #373867
+    width: 60%;
+    border-top: 3.75px solid #373867;
+    padding: 3%;
 }
+
 .homepage-section {
-   display: flex;
-   flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .homepage-section h2 {
@@ -49,38 +46,49 @@ h3 {
     font-weight: 700;
     color: #49A37B;
     text-transform: capitalize;
-    border-bottom: 0px;
+    border-bottom: 0;
+    padding: 3%;
 }
+
 .homepage-section p {
-    width: 400px;
     font-size: 16px;
     font-weight: 400;
     text-align: center;
-    margin-bottom: 10px;
+}
+
+.homepage-section .hp {
+    text-align: center;
+    width: 80%;
 }
 
 .homepage-1 {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
 }
 
 .homepage-1 img {
-    margin-top: 20px;
-    width: 330px;
-    height: 190px;
-
+    padding: 3%;
+    width: 50%;
+    height: 30%;
 }
 
 .homepage-2 {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5%;
 }
+
+.homepage-2 p {
+    padding-bottom: 2%;
+}
+
 .homepage-2 img {
-    margin-top: 20px;
-    width: 330px;
-    height: 170px;
+    padding: 3%;
+    width: 60%;
+    height: 30%;
 }
 
 /************************************************FEATURES SECTION*******************************************/
@@ -89,27 +97,29 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 350px; */
+    padding: 5%;
+    /* width: 350px;*/
 }
 
-.features-section p{
+.features-section p {
     text-align: center;
-    width: 400px;
 }
 
 .features-section ul {
-    width: 400px;
-    font-size: 14px; 
-    line-height: 22px; 
+    width: 90%;
+    font-size: 14px;
+    line-height: 22px;
     list-style-type: disc;
+    text-align: left;
 }
 
 .features-section span {
     font-weight: 700;
 }
+
 /*.features-section {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
 }*/
 
@@ -125,28 +135,38 @@ h3 {
 
 .reasons-section {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
 }
 
+.reasons-section p {
+    padding: 3%
+}
+
 .reasons-section img {
-    width: 225.05px;
-    height: 115.4px;
+    width: 50%;
+    height: 40%;
     border-radius: 17px;
 }
 
 
-.reasons-blocks{
-    width: 400px;
+.reasons-blocks-left,
+.reasons-blocks-right {
+    width: 70%;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column-reverse;
     align-items: center;
 
-    /* border-bottom: 0.75px solid #373867; */
+    /* border-bottom: 0.75px solid #373867;*/
+}
+
+.reasons-text {
+    text-align: center;
+    padding: 5%;
 }
 
 .reasons-lines {
-    width: 300px;
+    width: 60%;
     border: 0.75px solid #373867;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -160,10 +180,12 @@ h3 {
 
 .contact-section {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     align-items: center;
+    padding: 5%;
 
 }
+
 .send {
     width: 120px;
     height: 35px;
@@ -177,7 +199,7 @@ h3 {
 
 .reset {
     width: 80px;
-    height:35px;
+    height: 35px;
     background-color: #dadada;
     border-radius: 3.75px;
     border-style: none;
@@ -189,25 +211,28 @@ h3 {
 
 form {
     display: flex;
-    flex-direction: column;   
-    align-items:flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
+    width: 80%;
+}
+
+.contact-fields {
+    margin-top: 10px;
+    width: 100%;
 }
 
 .contact-items {
-    width: 400px
+    width: 100%
 }
 
 .contact-buttons {
     display: flex;
-    width: 400px;
+    width: 100%;
     justify-content: space-between;
 }
-
-
-
 
 /************************************************BOTTOM SECTION*******************************************/
 
@@ -219,10 +244,13 @@ form {
     background-color: #373867;
     opacity: 80%;
     color: #ffffff;
-} 
+}
 
 .bottom-section h2 {
-    display: none
+    display: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
 }
 
 .bottom-list ol {
@@ -234,7 +262,7 @@ form {
     font-size: 11px;
     font-weight: 400;
     text-decoration: none;
-    line-height: 22.48px;
+    line-height: 22.px;
     color: #ffffff;
 }
 
