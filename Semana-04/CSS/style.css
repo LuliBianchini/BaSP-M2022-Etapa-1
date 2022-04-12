@@ -12,10 +12,9 @@ body {
         flex-direction: column;
     }
 
-    header h1 {
+    header h1, header i {
         font-size: 60px;
     }
-    /*********************************HOMEPAGE****************************/
 
     .homepage-1 {
         flex-direction: row;
@@ -59,9 +58,11 @@ body {
         align-items: center;
         width:80%
     }
-    
 
-/*********************************BOTTOM****************************/
+    .contact-section form {
+        width: 70%;
+        align-items: flex-start;
+    }
 
     .bottom-section h3, .bottom-list a {
         font-size: 15px;
@@ -69,16 +70,11 @@ body {
 
     .bottom-section h2 {
         display: contents;
-    }
-
-    
+    }   
 }
 
 
 @media screen and (min-width: 1024px) {
-
-    /*********************************SIDEBAR****************************/
-    
     body {
         justify-content: left;
     }
@@ -95,30 +91,14 @@ body {
     }
 
     header {
-        font-size: 60px;
         margin-left: 20%;
         justify-content: flex-start;
+        font-size: 60px;
     }
     
     footer {
-        font-size: 15px;
         margin-left: 20%;
+        font-size: 15px;
     }
-
-    .contact-items, .contact-buttons{
-        width: 70%;
-    }
-    
-/*     .features-section {
-        align-items: flex-start;
-    }
-
-    .reasons-section {
-        align-items:  flex-start;
-    }
-
-    .contact-section {
-        align-items:  flex-start;
-    }*/
 } 
 

@@ -6,16 +6,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 9px;
     font-weight: 500;
-    color: #373867;
     text-decoration: none;
     text-align: center;
+    color: #373867;
 }
 
 h2 {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    /*     border-bottom: 3.75px solid #373867;*/
 }
 
 h3 {
@@ -25,9 +24,9 @@ h3 {
 /************************************************HOMEPAGE SECTION*******************************************/
 
 .line {
+    padding: 3%;
     width: 60%;
     border-top: 3.75px solid #373867;
-    padding: 3%;
 }
 
 .homepage-section {
@@ -36,12 +35,12 @@ h3 {
 }
 
 .homepage-section h2 {
+    padding: 3%;
+    border-bottom: 0;
     font-size: 30px;
     font-weight: 700;
     color: #49A37B;
     text-transform: capitalize;
-    border-bottom: 0;
-    padding: 3%;
 }
 
 .homepage-section p {
@@ -51,8 +50,8 @@ h3 {
 }
 
 .homepage-section .hp {
-    text-align: center;
     width: 80%;
+    text-align: center;
 }
 
 .homepage-1 {
@@ -111,7 +110,6 @@ h3 {
     font-weight: 700;
 }
 
-
 /************************************************REASONS SECTION*******************************************/
 
 .reasons-section {
@@ -137,24 +135,19 @@ h3 {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-
-    /* border-bottom: 0.75px solid #373867;*/
 }
 
 .reasons-text {
-    text-align: center;
     padding: 5%;
+    text-align: center;
 }
 
 .reasons-lines {
     width: 60%;
-    border: 0.75px solid #373867;
     margin-top: 15px;
     margin-bottom: 15px;
+    border: 0.75px solid #373867;
 }
-
-
-
 
 /************************************************CONTACT SECTION*******************************************/
 
@@ -164,7 +157,6 @@ h3 {
     flex-direction: column;
     align-items: center;
     padding: 5%;
-
 }
 
 .send {
@@ -176,6 +168,7 @@ h3 {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
+    color: #373867;
 }
 
 .reset {
@@ -188,16 +181,17 @@ h3 {
     font-size: 12px;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    color: #373867;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 80%;
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
     font-weight: 500;
-    width: 80%;
 }
 
 .contact-fields {
@@ -205,14 +199,41 @@ form {
     width: 100%;
 }
 
-.contact-items {
+.contact-fields input {
+    width: 80%;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color:#dadada
+}
+
+.contact-fields select {
     width: 100%;
     margin-top: 2%;
     padding: 1%;
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     color:#dadada
 }
+
+.contact-fields textarea {
+    width: 98%;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color:#dadada
+}
+
+/* .contact-items {
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color:#dadada
+} */
 
 .contact-buttons {
     display: flex;

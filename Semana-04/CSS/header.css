@@ -3,7 +3,7 @@ header {
     justify-content: space-between;
     border-bottom: 3.75px solid #373867;
     align-items: center;
-    padding: 2%;
+    padding: 3%;
 }
 
 header i {
@@ -14,4 +14,9 @@ header i {
 header h1 {
     font-size: 50px;
     font-weight: 700;
+
+}
+
+#header-line {
+    border-top: 2px solid #aace9b;
 }

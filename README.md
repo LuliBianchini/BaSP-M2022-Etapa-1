@@ -17,9 +17,10 @@ It also includes a header, a footer and a sidebar
 In this repository you will find an HTML  file named "index" which contains the landing of a webpage and a folder labeled "Assets" where all the image files are stored.
 
 ## *Progress*
-**Semana 1:** It was created in Figma a prototype of how it would look the structure and the layout of the project requested.\
-**Semana 2:** It was created an "index" file where the landing page would be arranged. Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. \
-**Semana 3:** The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company.
+**Week 1:** It was created in Figma a prototype of how it would look the structure and the layout of the project requested.\
+**Week 2:** It was created an "index" file where the landing page would be arranged. Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. \
+**Week 3:** The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company. \
+**Week 4:** It was designed a responsive layout using the concept Mobile First, making it functional to other screen sizes such as tablets and desktops devices.
 
 ## *Authors*
 Lucía Bianchini
