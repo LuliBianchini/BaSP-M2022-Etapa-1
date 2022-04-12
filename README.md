@@ -22,5 +22,8 @@ In this repository you will find an HTML  file named "index" which contains the 
 **Week 3:** The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company. \
 **Week 4:** It was designed a responsive layout using the concept Mobile First, making it functional to other screen sizes such as tablets and desktops devices.
 
+## *Project Page*
+https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-04
+
 ## *Authors*
 Lucía Bianchini

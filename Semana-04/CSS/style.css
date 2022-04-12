@@ -59,11 +59,6 @@ body {
         width:80%
     }
 
-    .contact-section form {
-        width: 70%;
-        align-items: flex-start;
-    }
-
     .bottom-section h3, .bottom-list a {
         font-size: 15px;
     }
@@ -96,6 +91,11 @@ body {
         font-size: 60px;
     }
     
+    .contact-section form {
+        margin-right: 30%;
+        width: 50%;
+    }
+
     footer {
         margin-left: 20%;
         font-size: 15px;

@@ -199,8 +199,8 @@ form {
     width: 100%;
 }
 
-.contact-fields input {
-    width: 80%;
+.contact-fields input, .contact-fields textarea {
+    width: 97%;
     margin-top: 2%;
     padding: 1%;
     font-family: 'Roboto', sans-serif;
@@ -216,24 +216,6 @@ form {
     font-size: 10px;
     color:#dadada
 }
-
-.contact-fields textarea {
-    width: 98%;
-    margin-top: 2%;
-    padding: 1%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color:#dadada
-}
-
-/* .contact-items {
-    width: 100%;
-    margin-top: 2%;
-    padding: 1%;
-    font-family: 'Roboto', sans-serif;
-    font-size: 10px;
-    color:#dadada
-} */
 
 .contact-buttons {
     display: flex;
