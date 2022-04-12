@@ -11,20 +11,18 @@ body {
         display: flex;
         flex-direction: column;
     }
-    
+
     header h1 {
         font-size: 60px;
     }
     /*********************************HOMEPAGE****************************/
 
     .homepage-1 {
-        display: flex;
         flex-direction: row;
         align-items: center;
     }
         
     .homepage-2 {
-        display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
@@ -35,9 +33,14 @@ body {
         font-size: 16px;
     }
     
+    .features-section p {
+        text-align: left;
+    }
+
     .features-section ul{
         font-size: 18px;
         text-align: center;
+        line-height: 28px;
     }
 
     .features-section span{
@@ -46,14 +49,12 @@ body {
     }
 
     .reasons-blocks-left {
-        display: flex;
         flex-direction: row;
         align-items: center;
         width:80%
     }
 
     .reasons-blocks-right {
-        display: flex;
         flex-direction: row-reverse;
         align-items: center;
         width:80%
@@ -70,15 +71,17 @@ body {
         display: contents;
     }
 
+    
 }
-
-
 
 
 @media screen and (min-width: 1024px) {
 
     /*********************************SIDEBAR****************************/
     
+    body {
+        justify-content: left;
+    }
     aside {
         display: flex;
     }
@@ -94,11 +97,28 @@ body {
     header {
         font-size: 60px;
         margin-left: 20%;
+        justify-content: flex-start;
     }
-
+    
     footer {
         font-size: 15px;
         margin-left: 20%;
     }
-}
+
+    .contact-items, .contact-buttons{
+        width: 70%;
+    }
+    
+/*     .features-section {
+        align-items: flex-start;
+    }
+
+    .reasons-section {
+        align-items:  flex-start;
+    }
+
+    .contact-section {
+        align-items:  flex-start;
+    }*/
+} 
 

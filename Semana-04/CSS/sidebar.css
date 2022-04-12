@@ -2,24 +2,43 @@ aside {
     display: none;
     position: fixed;
     flex-direction: column;
-    background-color: #b1b2b6;
     width: 20%;
     height: 100%;
-    margin: 0;
-    padding: 0;
-    justify-content: space-between;
+    justify-content: space-around;
+    background-color: #b1b2b6;
+}
+
+.nav-bar input {
+    padding: 3%;
+    margin: 10%;
+    border-radius: 5px;
+}
+
+aside .buttons a {
+    text-transform: uppercase;
+    margin-left: 20px;
+    padding: 10px 20px;
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
 }
 
 aside h2 {
-    margin-top: 60px;
+    margin-top: 30%;
+    padding: 2%;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: 500;
 
 }
 
 .aside-content {
-    padding:8%;
+    padding:50px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -34,47 +53,19 @@ aside h2 {
 }
 
 .aside-content i {
-    padding-left: 2%;
+    padding-right: 2%;
     color:#373867
 }
 
-aside .buttons a {
-    text-transform: uppercase;
-    margin: 10%;
+
+aside .buttons #sign-up {
+    background-color: #373867;
 }
 
 .aside-line {
-    padding-bottom: 20%;
-    border-top:2px solid #49A37B;
+    border-top:2px solid #49a37b;
+    margin-bottom: 10px;
 }
 
-.nav-bar input {
-    padding: 3%;
-    margin: 10%;
-    border-radius: 5px;
-}
 
-aside #log-in {
-    padding: 5%;
-    margin-right: 5%;
-    background-color: #aace9b;
-    border-radius: 3.75px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-}
 
-aside #sign-up {
-    padding: 5%;
-    background-color: #373867;
-    border-radius: 3.75px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    color: #ffffff;
-    text-decoration: none;
-    text-align: center;
-}
