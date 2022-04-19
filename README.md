@@ -24,7 +24,7 @@ In this repository you will find five folders labeled under the name Week-0X, th
 **Week 5:** It was created a new folder which contains an index.html file and an exercises file. Within the exercises one there are six Javascript files labeled under names that express what  they are about. Each JS file has a series of exercises that deal with different Javascript variables.
 
 ## *Project Pages*
-https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-04
+https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-04 \
 https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-05
 
 ## *Authors*
