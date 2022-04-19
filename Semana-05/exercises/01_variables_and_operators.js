@@ -1,4 +1,5 @@
 console.log('~ Variables and Operators ~');
+
 /* a. Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la suma de ambos números en
 una 3er variable.*/
 
@@ -22,6 +23,5 @@ resultado de la suma en una 3er variable (utilizar length).*/
 console.log('-Exercise 1.c:');
 var firstString = ('strawberry fields');
 var secondString = ('yellow submarine');
-var totalCharacters = firstString + secondString;
-console.log(totalCharacters.length)
-
+var totalCharacters = firstString.length + secondString.length
+console.log(totalCharacters)

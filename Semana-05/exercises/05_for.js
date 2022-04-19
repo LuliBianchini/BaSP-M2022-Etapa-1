@@ -4,7 +4,7 @@ console.log('~ For ~');
 alerta utilizando cada una de las palabras.*/
 
 console.log('-Exercise 5.a');
-var fruits = ['banana', 'apple', 'orange', 'watermelon', 'strawberry']
+var fruits = ['banana', 'apple', 'orange', 'watermelon', 'strawberry'];
 for (i = 0; i < fruits.length; i++)
     alert(fruits[i]);
 
@@ -35,7 +35,7 @@ es decir que al final de la ejecución del bucle for debería haber 10 elementos
 hasta al número 9. Mostrar por la consola del navegador el array final (utilizar console.log).*/
 
 console.log('-Exercise 5.d');
-console.log('Shown in alert')
+console.log('Shown in alert');
 var repetitions = []
 for (var o = 0; o < 10; o++) {
     repetitions[o] = o

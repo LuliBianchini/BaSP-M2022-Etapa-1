@@ -6,8 +6,8 @@ console.log('~ Arrays ~');
 console.log('-Exercise 3.a:');
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
     'Octubre', 'Noviembre', 'Diciembre'];
-console.log(months[5]);
-console.log(months[11]);
+console.log(months[4]);
+console.log(months[10]);
 
 // b. Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
 
@@ -22,7 +22,8 @@ console.log(months);
 console.log('-Exercise 3.c:');
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre',
     'Octubre', 'Noviembre', 'Diciembre'];
-months.unshift('start'), months.push('end');
+months.unshift('start'),
+    months.push('end');
 console.log(months);
 
 // d. Quitar un elemento del principio y del final del array (utilizar shift y pop).
