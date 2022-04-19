@@ -21,8 +21,6 @@ h3 {
     font-weight: 700;
 }
 
-/************************************************HOMEPAGE SECTION*******************************************/
-
 .line {
     padding: 3%;
     width: 60%;
@@ -84,14 +82,11 @@ h3 {
     height: 30%;
 }
 
-/************************************************FEATURES SECTION*******************************************/
-
 .features-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 5%;
-    /* width: 350px;*/
 }
 
 .features-section p {
@@ -109,8 +104,6 @@ h3 {
 .features-section span {
     font-weight: 700;
 }
-
-/************************************************REASONS SECTION*******************************************/
 
 .reasons-section {
     display: flex;
@@ -148,9 +141,6 @@ h3 {
     margin-bottom: 15px;
     border: 0.75px solid #373867;
 }
-
-/************************************************CONTACT SECTION*******************************************/
-
 
 .contact-section {
     display: flex;
@@ -223,8 +213,6 @@ form {
     justify-content: space-between;
     margin-top: 2%;
 }
-
-/************************************************BOTTOM SECTION*******************************************/
 
 .bottom-section {
     display: flex;

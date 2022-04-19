@@ -7,11 +7,6 @@ body {
 
 @media screen and (min-width: 768px) {
 
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
     header h1 {
         font-size: 60px;
     }
@@ -76,6 +71,8 @@ body {
 @media screen and (min-width: 1024px) {
     body {
         justify-content: left;
+        display: flex;
+        flex-direction: column;
     }
     aside {
         display: flex;
@@ -90,8 +87,8 @@ body {
     }
 
     header {
-        margin-left: 20%;
-        justify-content: flex-start;
+        margin-left: 10%;
+        text-align: start;
         font-size: 60px;
     }
     
