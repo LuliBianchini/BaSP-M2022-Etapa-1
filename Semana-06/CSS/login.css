@@ -3,6 +3,25 @@ body {
     color: #373867;
 }
 
+aside #sign-up {
+    padding: 10px 20px;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px grey;
+    background-color: #373867;
+}
+
+#aside-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 main {
     display: flex;
     flex-direction: column;

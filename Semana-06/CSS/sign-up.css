@@ -3,9 +3,27 @@ body {
     color: #373867;
 }
 
+aside #sign-up {
+    padding: 10px 20px;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px grey;
+    background-color: #aace9b;
+}
+
+#aside-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 main {
-/*     background-color: #aace9b; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -86,16 +104,16 @@ form p {
     text-shadow:2px 2px 2px grey
 }
 
-.msg-container {
+.error {
     font-family: 'Roboto', sans-serif;
     font-size: 12px;
-    color: red
-}
-
-.error {
+    color: red;
     display: flex;
 }
 
+.hide {
+    visibility: hidden;
+}
 @media screen and (min-width: 768px) {
 
     header h1 {

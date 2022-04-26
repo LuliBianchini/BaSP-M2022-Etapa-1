@@ -11,10 +11,9 @@ window.onload = function () {
     var inputEmail = document.getElementById("email");
     var inputPassword = document.getElementById("password");
     var inputRepeatPassword = document.getElementById("repeat-password");
-/*     var inputCreateBtn = document.getElementById("create-btn"); */
+    /*     var inputCreateBtn = document.getElementById("create-btn"); */
     var msgContainer = document.getElementsByClassName("msg-container");
 
-    console.log(inputEmail.value)
     inputName.addEventListener("blur", nameBlur);
     inputName.addEventListener("focus", nameFocus);
     inputSurname.addEventListener("blur", surnameBlur);
@@ -157,20 +156,28 @@ window.onload = function () {
     // PHONE NUMBER
 
     function validatePhone() {
+        var flag = true;
+        var i = 0
 
-        for (var i = 0; i < inputPhone.value.length; i++) {
-            if (!isNaN(inputPhone.value[i]) && (inputPhone.value.lenght == 9)) {
-                return true;
+        if (inputPhone.value.length === 10) {
+            while (i < inputPhone.value.length && flag === true) {
+                if (isNaN(inputPhone.value[i])) {
+                    flag = false;
+                }
+                i++;
             }
+        } else {
+            flag = false;
         }
-        return false;
-    }
+        return flag;
+
+    } console.log(inputPhone.value)
 
     function phoneBlur() {
         if (!validatePhone()) {
             msgContainer[4].classList.remove('hide');
             msgContainer[4].classList.add('error');
-            msgContainer[4].innerHTML = "Phone number incorrect";
+            msgContainer[4].innerHTML = "Phone incorrect";
             inputPhone.style.border = "3px solid red";
         } else {
             msgContainer[4].classList.remove('error');
@@ -226,7 +233,7 @@ window.onload = function () {
         inputAdress.style.border = "3px solid grey";
     }
 
-    
+
 
     // CITY
     function cityBlur() {
@@ -252,7 +259,7 @@ window.onload = function () {
         var flag = true;
         var i = 0
 
-        if ((inputPostCode.value.lenght >= 4) && (inputPostCode.value.lenght <= 5)) {
+        if (inputPostCode.value.length >= 4 && inputPostCode.value.length <= 5) {
             while (i < inputPostCode.value.length && flag === true) {
                 if (isNaN(inputPostCode.value[i])) {
                     flag = false;
@@ -263,7 +270,6 @@ window.onload = function () {
             flag = false;
         }
         return flag;
-
     }
     function postCodeBlur() {
         if (!validatePostCode()) {
@@ -281,7 +287,7 @@ window.onload = function () {
         msgContainer[7].classList.add('hide');
         inputPostCode.style.border = "3px solid grey";
     }
-    
+
     // EMAIL
 
     function validateEmail() {
@@ -369,11 +375,6 @@ window.onload = function () {
         inputRepeatPassword.style.border = "3px solid grey";
     }
 }
-
-
-
-
-
 
 
 
