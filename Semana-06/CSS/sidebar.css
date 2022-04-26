@@ -1,0 +1,72 @@
+aside {
+    display: none;
+    position: fixed;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20%;
+    height: 100%;
+    background-color: #b1b2b6;
+}
+
+aside input {
+    padding: 3%;
+    margin: 10%;
+    border-radius: 5px;
+}
+
+aside .buttons a {
+    padding: 10px 20px;
+    margin-left: 5%;
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 2px 2px 2px grey;
+}
+
+aside .buttons #sign-up {
+    background-color: #373867;
+}
+
+aside h2 {
+    padding: 5%;
+    margin-top: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #373867;
+}
+
+.aside-content {
+    padding:50px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: #373867;
+}
+
+.aside-content a {
+    line-height: 30px;
+    text-decoration: none;
+    color: #373867;
+}
+
+.aside-content i {
+    padding-right: 2px;
+    color:#373867;
+}
+
+.aside-line {
+    margin-bottom: 10px;
+    border-top:5px solid #aace9b;
+}
+
+
+
