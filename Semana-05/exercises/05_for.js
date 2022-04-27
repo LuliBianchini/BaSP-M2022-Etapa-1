@@ -4,6 +4,7 @@ console.log('~ For ~');
 alerta utilizando cada una de las palabras.*/
 
 console.log('-Exercise 5.a');
+console.log('Shown in alert');
 var fruits = ['banana', 'apple', 'orange', 'watermelon', 'strawberry'];
 for (i = 0; i < fruits.length; i++)
     alert(fruits[i]);
@@ -24,6 +25,7 @@ bucle for para ir guardando cada palabra dentro de la variable sentence. Al fina
 cadena completa.*/
 
 console.log('-Exercise 5.c');
+console.log('Shown in alert');
 var sentence = ''
 for (var e = 0; e < 5; e++) {
     sentence += fruits[e] + '';
