@@ -70,19 +70,13 @@ window.onload = function () {
 
 
     function logInClick() {
-        var mailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
-        var emailValue = email.value;
-        var validMail = mailFormat.test(emailValue);
-        var passwordFormat = /^[A-Za-z0-9_-]*$/;
-        var passwordValue = password.value;
-        var validPassword = passwordFormat.test(passwordValue);
-        if (!validMail) {
-            alert('Email Incorrect: ' + emailValue);
-        } else if (!validPassword) {
-            alert('Password incorrect: ' + passwordValue);
-        } else if (validMail && validPassword) {
-            alert('CONGRATULATIONS\n YOU HAVE SUCCESSFULLY LOGED IN' + '\nEmail: ' + emailValue +
-                '\nPassword:' + passwordValue)
+        if (!validateEmail(email.value)) {
+            alert('Email Incorrect: ' + email.value);
+        } else if (!validatePassword(password.value)) {
+            alert('Password incorrect: ' + password.value);
+        } else if (validateEmail && validatePassword) {
+            alert('CONGRATULATIONS\n YOU HAVE SUCCESSFULLY LOGED IN' + '\nEmail: ' + email.value +
+                '\nPassword:' + password.value)
         }
     }
 }

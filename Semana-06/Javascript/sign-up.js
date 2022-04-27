@@ -354,13 +354,37 @@ window.onload = function () {
     }
 
     function createBtnClick() {
-        alert('CONGRATULATIONS\n YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED' + '\nName: ' + inputName.value + '\nSurname: ' + inputSurname.value + '\nID: ' + inputId.value +
-            '\nDate of Birth: ' + inputDateOfBirth.value + '\nPhone Number: ' + inputPhone.value + '\nAddress: ' +
-            inputAddress.value + '\nCity: ' + inputCity.value + '\nPost Code: ' + inputPostCode.value +
-            '\nEmail: ' + inputEmail.value + '\nPassword: ' + inputPassword.value)
+        if (!validateName(inputName.value)) {
+            alert('Error: Name Incorrect')
+        } else if (!validateName(inputSurname.value)) {
+            alert('Error: Surname Incorrect')
+        } else if (!validateId(inputId.value)) {
+            alert('Error: ID Incorrect')
+        } else if (!validateDoF(inputDateOfBirth.value)) {
+            alert('Error: Date of Birth Incorrect')
+        } else if (!validatePhone(inputPhone.value)) {
+            alert('Error: Phone Number Incorrect') 
+        } else if (!validateAdress(inputAddress.value)) {
+            alert('Error: Address Incorrect') 
+        } else if (!validateName(inputCity.value)) {
+            alert('Error: City Incorrect') 
+        } else if (!validatePostCode(inputPostCode.value)) {
+            alert('Error: Post Code Incorrect') 
+        } else if (!validateEmail(inputEmail.value)) {
+            alert('Error: Email Incorrect') 
+        } else if (!validatePassword(inputPassword.value)) {
+            alert('Error: Password Incorrect')
+        } else if (validateName(inputName.value) && validateName(inputSurname.value) && validateId(inputId.value) && 
+        validateDoF(inputDateOfBirth.value) && validatePhone(inputPhone.value) && validateAdress(inputAddress.value) && 
+        validateName(inputCity.value) && validatePostCode(inputPostCode.value) && validateEmail(inputEmail) && 
+        validatePassword (inputPassword.value) && reValidatePassword(inputRepeatPassword.value)) {
+            alert('CONGRATULATIONS\n YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED' + '\nName: ' + inputName.value + '\nSurname: ' +
+                inputSurname.value + '\nID: ' + inputId.value + '\nDate of Birth: ' + inputDateOfBirth.value + '\nPhone Number: ' +
+                inputPhone.value + '\nAddress: ' + inputAddress.value + '\nCity: ' + inputCity.value + '\nPost Code: ' +
+                inputPostCode.value + '\nEmail: ' + inputEmail.value + '\nPassword: ' + inputPassword.value)
+        }
     }
 }
-
 
 
 
