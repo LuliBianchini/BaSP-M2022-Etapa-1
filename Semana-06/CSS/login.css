@@ -94,10 +94,15 @@ form input {
     box-shadow: 2px 2px 2px grey
 }
 
-.msg-container {
+.error {
     font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    color: red
+    font-size: 12px;
+    color: red;
+    display: flex;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {

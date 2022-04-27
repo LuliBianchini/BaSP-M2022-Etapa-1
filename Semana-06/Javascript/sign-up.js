@@ -5,13 +5,13 @@ window.onload = function () {
     var inputId = document.getElementById("id");
     var inputDateOfBirth = document.getElementById("dob");
     var inputPhone = document.getElementById("phone-number");
-    var inputAdress = document.getElementById("adress");
+    var inputAddress = document.getElementById("adress");
     var inputCity = document.getElementById("city");
     var inputPostCode = document.getElementById("post-code");
     var inputEmail = document.getElementById("email");
     var inputPassword = document.getElementById("password");
     var inputRepeatPassword = document.getElementById("repeat-password");
-    /*     var inputCreateBtn = document.getElementById("create-btn"); */
+    var inputCreateBtn = document.getElementById("create-btn");
     var msgContainer = document.getElementsByClassName("msg-container");
 
     inputName.addEventListener("blur", nameBlur);
@@ -24,8 +24,8 @@ window.onload = function () {
     inputDateOfBirth.addEventListener("focus", dateOfBirthFocus);
     inputPhone.addEventListener("blur", phoneBlur);
     inputPhone.addEventListener("focus", phoneFocus);
-    inputAdress.addEventListener("blur", adressBlur);
-    inputAdress.addEventListener("focus", adressFocus);
+    inputAddress.addEventListener("blur", adressBlur);
+    inputAddress.addEventListener("focus", adressFocus);
     inputCity.addEventListener("blur", cityBlur);
     inputCity.addEventListener("focus", cityFocus);
     inputPostCode.addEventListener("blur", postCodeBlur);
@@ -36,7 +36,7 @@ window.onload = function () {
     inputPassword.addEventListener("focus", passWordFocus);
     inputRepeatPassword.addEventListener("blur", repeatPasswordBlur);
     inputRepeatPassword.addEventListener("focus", repeatPasswordFocus);
-    /*     inputCreateBtn.addEventListener("click", createBtnBlur); */
+    inputCreateBtn.addEventListener("click", createBtnClick); 
 
     // ------------ VALIDATE NAME ---------------
     function validateName(name) {
@@ -61,7 +61,7 @@ window.onload = function () {
         if (!validateName(inputName.value)) {
             msgContainer[0].classList.remove('hide');
             msgContainer[0].classList.add('error');
-            msgContainer[0].innerHTML = "Name incorrect";
+            msgContainer[0].innerHTML = "Invalid Name.";
             inputName.style.border = "3px solid red";
         } else {
             msgContainer[0].classList.remove('error');
@@ -79,7 +79,7 @@ window.onload = function () {
         if (!validateName(inputSurname.value)) {
             msgContainer[1].classList.remove('hide');
             msgContainer[1].classList.add('error');
-            msgContainer[1].innerHTML = "Surname incorrect";
+            msgContainer[1].innerHTML = "Invalid Surname.";
             inputSurname.style.border = "3px solid red";
         } else {
             msgContainer[1].classList.remove('error');
@@ -114,7 +114,7 @@ window.onload = function () {
         if (!validateId()) {
             msgContainer[2].classList.remove('hide');
             msgContainer[2].classList.add('error');
-            msgContainer[2].innerHTML = "DNI incorrect";
+            msgContainer[2].innerHTML = "Invalid ID.";
             inputId.style.border = "3px solid red";
         } else {
             msgContainer[2].classList.remove('error');
@@ -140,7 +140,7 @@ window.onload = function () {
         if (!validateDoF()) {
             msgContainer[3].classList.remove('hide');
             msgContainer[3].classList.add('error');
-            msgContainer[3].innerHTML = "Date of birth incorrect";
+            msgContainer[3].innerHTML = "Invalid Date of birth.";
             inputDateOfBirth.style.border = "3px solid red";
         } else {
             msgContainer[3].classList.remove('error');
@@ -170,14 +170,13 @@ window.onload = function () {
             flag = false;
         }
         return flag;
-
-    } console.log(inputPhone.value)
+    }
 
     function phoneBlur() {
         if (!validatePhone()) {
             msgContainer[4].classList.remove('hide');
             msgContainer[4].classList.add('error');
-            msgContainer[4].innerHTML = "Phone incorrect";
+            msgContainer[4].innerHTML = "Invalid Phone Number.";
             inputPhone.style.border = "3px solid red";
         } else {
             msgContainer[4].classList.remove('error');
@@ -194,7 +193,7 @@ window.onload = function () {
     // ADRESS
 
     function validateAdress() {
-        var addressBlanks = inputAdress.value.replaceAll(' ', '');
+        var addressBlanks = inputAddress.value.replaceAll(' ', '');
         var number = false;
         for (var i = 0; i < addressBlanks.length; i++) {
             if (isNaN(addressBlanks[i]) == false) {
@@ -207,10 +206,10 @@ window.onload = function () {
                 letter = true;
             }
         }
-        if (inputAdress.value.length > 5 && number == true && letter == true &&
-            inputAdress.value.indexOf(' ') > 0 &&
-            inputAdress.value.indexOf(' ') < inputAdress.value.length - 1 &&
-            inputAdress.value.length > inputAdress.value.lastIndexOf(' ')) {
+        if (inputAddress.value.length > 5 && number == true && letter == true &&
+            inputAddress.value.indexOf(' ') > 0 &&
+            inputAddress.value.indexOf(' ') < inputAddress.value.length - 1 &&
+            inputAddress.value.length > inputAddress.value.lastIndexOf(' ')) {
             return true
         } else {
             return false
@@ -220,17 +219,17 @@ window.onload = function () {
         if (!validateAdress()) {
             msgContainer[5].classList.remove('hide');
             msgContainer[5].classList.add('error');
-            msgContainer[5].innerHTML = "Adress incorrect";
-            inputAdress.style.border = "3px solid red";
+            msgContainer[5].innerHTML = "Invalid Adress.";
+            inputAddress.style.border = "3px solid red";
         } else {
             msgContainer[5].classList.remove('error');
-            inputAdress.style.border = "3px solid green";
+            inputAddress.style.border = "3px solid green";
         }
     }
 
     function adressFocus() {
         msgContainer[5].classList.add('hide');
-        inputAdress.style.border = "3px solid grey";
+        inputAddress.style.border = "3px solid grey";
     }
 
 
@@ -240,7 +239,7 @@ window.onload = function () {
         if (!validateName(inputCity.value)) {
             msgContainer[6].classList.remove('hide');
             msgContainer[6].classList.add('error');
-            msgContainer[6].innerHTML = "Name incorrect";
+            msgContainer[6].innerHTML = "Invalid city.";
             inputCity.style.border = "3px solid red";
         } else {
             msgContainer[6].classList.remove('error');
@@ -275,7 +274,7 @@ window.onload = function () {
         if (!validatePostCode()) {
             msgContainer[7].classList.remove('hide');
             msgContainer[7].classList.add('error');
-            msgContainer[7].innerHTML = "Name incorrect";
+            msgContainer[7].innerHTML = "Invalid Post Code.";
             inputPostCode.style.border = "3px solid red";
         } else {
             msgContainer[7].classList.remove('error');
@@ -302,10 +301,10 @@ window.onload = function () {
     }
 
     function eMailBlur() {
-        if (!validateEmail(inputEmail.value)) {
+        if (!validateEmail()) {
             msgContainer[8].classList.remove('hide');
             msgContainer[8].classList.add('error');
-            msgContainer[8].innerHTML = "Email incorrect";
+            msgContainer[8].innerHTML = "Invalid Email.";
             inputEmail.style.border = "3px solid red";
         } else {
             msgContainer[8].classList.remove('error');
@@ -332,10 +331,10 @@ window.onload = function () {
     }
 
     function passWordBlur() {
-        if (!validatePassword(inputPassword.value)) {
+        if (!validatePassword()) {
             msgContainer[9].classList.remove('hide');
             msgContainer[9].classList.add('error');
-            msgContainer[9].innerHTML = "Password incorrect";
+            msgContainer[9].innerHTML = "The password entered is incorrect.";
             inputPassword.style.border = "3px solid red";
         } else {
             msgContainer[9].classList.remove('error');
@@ -359,10 +358,10 @@ window.onload = function () {
 
     }
     function repeatPasswordBlur() {
-        if (!reValidatePassword(inputRepeatPassword.value)) {
+        if (!reValidatePassword()) {
             msgContainer[10].classList.remove('hide');
             msgContainer[10].classList.add('error');
-            msgContainer[10].innerHTML = "Password incorrect";
+            msgContainer[10].innerHTML = "The password does not match.";
             inputRepeatPassword.style.border = "3px solid red";
         } else {
             msgContainer[10].classList.remove('error');
@@ -374,7 +373,15 @@ window.onload = function () {
         msgContainer[10].classList.add('hide');
         inputRepeatPassword.style.border = "3px solid grey";
     }
+
+    function createBtnClick (){
+        alert('CONGRATULATIONS\n YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED' + '\nName: ' + inputName.value + '\nSurname: ' + inputSurname.value + '\nID: ' + inputId.value +
+        '\nDate of Birth: ' + inputDateOfBirth.value + '\nPhone Number: ' + inputPhone.value + '\nAddress: ' +
+        inputAddress.value + '\nCity: ' + inputCity.value + '\nPost Code: ' + inputPostCode.value +
+        '\nEmail: ' + inputEmail.value + '\nPassword: ' + inputPassword.value)
+    }
 }
+
 
 
 

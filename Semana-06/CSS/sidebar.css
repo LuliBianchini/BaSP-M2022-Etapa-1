@@ -8,6 +8,10 @@ aside {
     background-color: #b1b2b6;
 }
 
+aside i {
+    color:#373867;
+    font-size: 15px;
+}
 aside input {
     padding: 3%;
     margin: 10%;

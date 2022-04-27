@@ -3,7 +3,7 @@ body {
     color: #373867;
 }
 
-aside #sign-up {
+aside #log-in {
     padding: 10px 20px;
     border-radius: 3.75px;
     font-family: 'Roboto', sans-serif;
@@ -44,6 +44,7 @@ main h2 {
     margin-left:5%;
     margin-top: 5%;
     margin-bottom: 10%;
+    padding-bottom: 10%;
     border-radius:10%;
     box-shadow: 5px 5px 5px grey; 
     border: 5px solid #aace9b;
@@ -74,24 +75,17 @@ form div input {
     border-radius: 10px;
 }
 
-form p {
-    margin-top: 10%;
-    margin-bottom: 9%;
-    text-transform: uppercase;
-    font-size: 15px;
-    text-decoration: underline;
-}
 
 #create {
-    margin-left: 40%;
-    margin-bottom: 5%;
-    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left:30%;
     width:80px;
     height: 20px;
 }
 
 #create input {
-    padding: 10%;
+    padding: 15%;
     background-color: #373867;
     border-radius: 20%;
     font-family: 'Roboto', sans-serif;
@@ -102,6 +96,17 @@ form p {
     text-align: center;
     color: #ffffff;
     text-shadow:2px 2px 2px grey
+}
+
+#member {
+    display: flex;
+    align-items: center;
+}
+ 
+#member a {
+    padding: 7%;
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .error {
@@ -172,10 +177,6 @@ form p {
     #form-container {
         width: 60%;
         margin-left: 20%
-    }
-
-    #create {
-        margin-left: 40%;
     }
 
     #create input{
