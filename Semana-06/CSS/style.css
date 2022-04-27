@@ -19,29 +19,30 @@ body {
         flex-direction: row;
         align-items: center;
     }
-        
+
     .homepage-2 {
         flex-direction: row-reverse;
         align-items: center;
     }
-    
-    .homepage-section .hp, .homepage-section p {
+
+    .homepage-section .hp,
+    .homepage-section p {
         align-self: center;
         text-align: left;
         font-size: 16px;
     }
-    
+
     .features-section p {
         text-align: left;
     }
 
-    .features-section ul{
+    .features-section ul {
         font-size: 18px;
         text-align: center;
         line-height: 28px;
     }
 
-    .features-section span{
+    .features-section span {
         font-size: 23px;
         font-weight: 700;
     }
@@ -49,22 +50,23 @@ body {
     .reasons-blocks-left {
         flex-direction: row;
         align-items: center;
-        width:80%
+        width: 80%
     }
 
     .reasons-blocks-right {
         flex-direction: row-reverse;
         align-items: center;
-        width:80%
+        width: 80%
     }
 
-    .bottom-section h3, .bottom-list a {
+    .bottom-section h3,
+    .bottom-list a {
         font-size: 15px;
     }
 
     .bottom-section h2 {
         display: contents;
-    }   
+    }
 }
 
 
@@ -74,6 +76,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
     aside {
         display: flex;
     }
@@ -91,7 +94,7 @@ body {
         text-align: start;
         font-size: 60px;
     }
-    
+
     .contact-section form {
         margin-right: 30%;
         width: 50%;
@@ -101,5 +104,4 @@ body {
         margin-left: 20%;
         font-size: 15px;
     }
-} 
-
+}

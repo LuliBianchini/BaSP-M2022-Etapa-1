@@ -1,44 +1,43 @@
 window.onload = function () {
 
-    var inputName = document.getElementById("first-name");
-    var inputSurname = document.getElementById("surname");
-    var inputId = document.getElementById("id");
-    var inputDateOfBirth = document.getElementById("dob");
-    var inputPhone = document.getElementById("phone-number");
-    var inputAddress = document.getElementById("adress");
-    var inputCity = document.getElementById("city");
-    var inputPostCode = document.getElementById("post-code");
-    var inputEmail = document.getElementById("email");
-    var inputPassword = document.getElementById("password");
-    var inputRepeatPassword = document.getElementById("repeat-password");
-    var inputCreateBtn = document.getElementById("create-btn");
-    var msgContainer = document.getElementsByClassName("msg-container");
+    var inputName = document.getElementById('first-name');
+    var inputSurname = document.getElementById('surname');
+    var inputId = document.getElementById('id');
+    var inputDateOfBirth = document.getElementById('dob');
+    var inputPhone = document.getElementById('phone-number');
+    var inputAddress = document.getElementById('adress');
+    var inputCity = document.getElementById('city');
+    var inputPostCode = document.getElementById('post-code');
+    var inputEmail = document.getElementById('email');
+    var inputPassword = document.getElementById('password');
+    var inputRepeatPassword = document.getElementById('repeat-password');
+    var inputCreateBtn = document.getElementById('create-btn');
+    var msgContainer = document.getElementsByClassName('msg-container');
 
-    inputName.addEventListener("blur", nameBlur);
-    inputName.addEventListener("focus", nameFocus);
-    inputSurname.addEventListener("blur", surnameBlur);
-    inputSurname.addEventListener("focus", surnameFocus);
-    inputId.addEventListener("blur", idBlur);
-    inputId.addEventListener("focus", idFocus);
-    inputDateOfBirth.addEventListener("blur", dateOfBirthBlur);
-    inputDateOfBirth.addEventListener("focus", dateOfBirthFocus);
-    inputPhone.addEventListener("blur", phoneBlur);
-    inputPhone.addEventListener("focus", phoneFocus);
-    inputAddress.addEventListener("blur", adressBlur);
-    inputAddress.addEventListener("focus", adressFocus);
-    inputCity.addEventListener("blur", cityBlur);
-    inputCity.addEventListener("focus", cityFocus);
-    inputPostCode.addEventListener("blur", postCodeBlur);
-    inputPostCode.addEventListener("focus", postCodeFocus);
-    inputEmail.addEventListener("blur", eMailBlur);
-    inputEmail.addEventListener("focus", eMailFocus);
-    inputPassword.addEventListener("blur", passWordBlur);
-    inputPassword.addEventListener("focus", passWordFocus);
-    inputRepeatPassword.addEventListener("blur", repeatPasswordBlur);
-    inputRepeatPassword.addEventListener("focus", repeatPasswordFocus);
-    inputCreateBtn.addEventListener("click", createBtnClick); 
+    inputName.addEventListener('blur', nameBlur);
+    inputName.addEventListener('focus', nameFocus);
+    inputSurname.addEventListener('blur', surnameBlur);
+    inputSurname.addEventListener('focus', surnameFocus);
+    inputId.addEventListener('blur', idBlur);
+    inputId.addEventListener('focus', idFocus);
+    inputDateOfBirth.addEventListener('blur', dateOfBirthBlur);
+    inputDateOfBirth.addEventListener('focus', dateOfBirthFocus);
+    inputPhone.addEventListener('blur', phoneBlur);
+    inputPhone.addEventListener('focus', phoneFocus);
+    inputAddress.addEventListener('blur', adressBlur);
+    inputAddress.addEventListener('focus', adressFocus);
+    inputCity.addEventListener('blur', cityBlur);
+    inputCity.addEventListener('focus', cityFocus);
+    inputPostCode.addEventListener('blur', postCodeBlur);
+    inputPostCode.addEventListener('focus', postCodeFocus);
+    inputEmail.addEventListener('blur', eMailBlur);
+    inputEmail.addEventListener('focus', eMailFocus);
+    inputPassword.addEventListener('blur', passWordBlur);
+    inputPassword.addEventListener('focus', passWordFocus);
+    inputRepeatPassword.addEventListener('blur', repeatPasswordBlur);
+    inputRepeatPassword.addEventListener('focus', repeatPasswordFocus);
+    inputCreateBtn.addEventListener('click', createBtnClick);
 
-    // ------------ VALIDATE NAME ---------------
     function validateName(name) {
         var flag = true;
         var i = 0;
@@ -56,43 +55,40 @@ window.onload = function () {
         return flag;
     }
 
-    // FIRST NAME
     function nameBlur() {
         if (!validateName(inputName.value)) {
             msgContainer[0].classList.remove('hide');
             msgContainer[0].classList.add('error');
-            msgContainer[0].innerHTML = "Invalid Name.";
-            inputName.style.border = "3px solid red";
+            msgContainer[0].innerHTML = 'Invalid Name.';
+            inputName.style.border = '3px solid red';
         } else {
             msgContainer[0].classList.remove('error');
-            inputName.style.border = "3px solid green";
+            inputName.style.border = '3px solid green';
         }
     }
 
     function nameFocus() {
         msgContainer[0].classList.add('hide');
-        inputName.style.border = "3px solid grey";
+        inputName.style.border = '3px solid grey';
     }
 
-    // SURNAME
     function surnameBlur() {
         if (!validateName(inputSurname.value)) {
             msgContainer[1].classList.remove('hide');
             msgContainer[1].classList.add('error');
-            msgContainer[1].innerHTML = "Invalid Surname.";
-            inputSurname.style.border = "3px solid red";
+            msgContainer[1].innerHTML = 'Invalid Surname.';
+            inputSurname.style.border = '3px solid red';
         } else {
             msgContainer[1].classList.remove('error');
-            inputSurname.style.border = "3px solid green";
+            inputSurname.style.border = '3px solid green';
         }
     }
 
     function surnameFocus() {
         msgContainer[1].classList.add('hide');
-        inputSurname.style.border = "3px solid grey";
+        inputSurname.style.border = '3px solid grey';
     }
 
-    // ID
     function validateId() {
         var flag = true;
         var i = 0
@@ -114,20 +110,19 @@ window.onload = function () {
         if (!validateId()) {
             msgContainer[2].classList.remove('hide');
             msgContainer[2].classList.add('error');
-            msgContainer[2].innerHTML = "Invalid ID.";
-            inputId.style.border = "3px solid red";
+            msgContainer[2].innerHTML = 'Invalid ID.';
+            inputId.style.border = '3px solid red';
         } else {
             msgContainer[2].classList.remove('error');
-            inputId.style.border = "3px solid green";
+            inputId.style.border = '3px solid green';
         }
     }
 
     function idFocus() {
         msgContainer[2].classList.add('hide');
-        inputId.style.border = "3px solid grey";
+        inputId.style.border = '3px solid grey';
     }
 
-    // DATE OF BIRTH
     function validateDoF() {
         if (new Date(inputDateOfBirth.value).getTime() > new Date().getTime()) {
             return false;
@@ -140,20 +135,18 @@ window.onload = function () {
         if (!validateDoF()) {
             msgContainer[3].classList.remove('hide');
             msgContainer[3].classList.add('error');
-            msgContainer[3].innerHTML = "Invalid Date of birth.";
-            inputDateOfBirth.style.border = "3px solid red";
+            msgContainer[3].innerHTML = 'Invalid Date of birth.';
+            inputDateOfBirth.style.border = '3px solid red';
         } else {
             msgContainer[3].classList.remove('error');
-            inputDateOfBirth.style.border = "3px solid green";
+            inputDateOfBirth.style.border = '3px solid green';
         }
     }
 
     function dateOfBirthFocus() {
         msgContainer[3].classList.add('hide');
-        inputDateOfBirth.style.border = "3px solid grey";
+        inputDateOfBirth.style.border = '3px solid grey';
     }
-
-    // PHONE NUMBER
 
     function validatePhone() {
         var flag = true;
@@ -176,21 +169,18 @@ window.onload = function () {
         if (!validatePhone()) {
             msgContainer[4].classList.remove('hide');
             msgContainer[4].classList.add('error');
-            msgContainer[4].innerHTML = "Invalid Phone Number.";
-            inputPhone.style.border = "3px solid red";
+            msgContainer[4].innerHTML = 'Invalid Phone Number.';
+            inputPhone.style.border = '3px solid red';
         } else {
             msgContainer[4].classList.remove('error');
-            inputPhone.style.border = "3px solid green";
+            inputPhone.style.border = '3px solid green';
         }
     }
 
     function phoneFocus() {
         msgContainer[4].classList.add('hide');
-        inputPhone.style.border = "3px solid grey";
+        inputPhone.style.border = '3px solid grey';
     }
-
-
-    // ADRESS
 
     function validateAdress() {
         var addressBlanks = inputAddress.value.replaceAll(' ', '');
@@ -219,40 +209,35 @@ window.onload = function () {
         if (!validateAdress()) {
             msgContainer[5].classList.remove('hide');
             msgContainer[5].classList.add('error');
-            msgContainer[5].innerHTML = "Invalid Adress.";
-            inputAddress.style.border = "3px solid red";
+            msgContainer[5].innerHTML = 'Invalid Adress.';
+            inputAddress.style.border = '3px solid red';
         } else {
             msgContainer[5].classList.remove('error');
-            inputAddress.style.border = "3px solid green";
+            inputAddress.style.border = '3px solid green';
         }
     }
 
     function adressFocus() {
         msgContainer[5].classList.add('hide');
-        inputAddress.style.border = "3px solid grey";
+        inputAddress.style.border = '3px solid grey';
     }
 
-
-
-    // CITY
     function cityBlur() {
         if (!validateName(inputCity.value)) {
             msgContainer[6].classList.remove('hide');
             msgContainer[6].classList.add('error');
-            msgContainer[6].innerHTML = "Invalid city.";
-            inputCity.style.border = "3px solid red";
+            msgContainer[6].innerHTML = 'Invalid city.';
+            inputCity.style.border = '3px solid red';
         } else {
             msgContainer[6].classList.remove('error');
-            inputCity.style.border = "3px solid green";
+            inputCity.style.border = '3px solid green';
         }
     }
 
     function cityFocus() {
         msgContainer[6].classList.add('hide');
-        inputCity.style.border = "3px solid grey";
+        inputCity.style.border = '3px solid grey';
     }
-
-    // POST CODE
 
     function validatePostCode() {
         var flag = true;
@@ -274,20 +259,18 @@ window.onload = function () {
         if (!validatePostCode()) {
             msgContainer[7].classList.remove('hide');
             msgContainer[7].classList.add('error');
-            msgContainer[7].innerHTML = "Invalid Post Code.";
-            inputPostCode.style.border = "3px solid red";
+            msgContainer[7].innerHTML = 'Invalid Post Code.';
+            inputPostCode.style.border = '3px solid red';
         } else {
             msgContainer[7].classList.remove('error');
-            inputPostCode.style.border = "3px solid green";
+            inputPostCode.style.border = '3px solid green';
         }
     }
 
     function postCodeFocus() {
         msgContainer[7].classList.add('hide');
-        inputPostCode.style.border = "3px solid grey";
+        inputPostCode.style.border = '3px solid grey';
     }
-
-    // EMAIL
 
     function validateEmail() {
         var emailFormat = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
@@ -304,20 +287,18 @@ window.onload = function () {
         if (!validateEmail()) {
             msgContainer[8].classList.remove('hide');
             msgContainer[8].classList.add('error');
-            msgContainer[8].innerHTML = "Invalid Email.";
-            inputEmail.style.border = "3px solid red";
+            msgContainer[8].innerHTML = 'Invalid Email.';
+            inputEmail.style.border = '3px solid red';
         } else {
             msgContainer[8].classList.remove('error');
-            inputEmail.style.border = "3px solid green";
+            inputEmail.style.border = '3px solid green';
         }
     }
 
     function eMailFocus() {
         msgContainer[8].classList.add('hide');
-        inputEmail.style.border = "3px solid grey";
+        inputEmail.style.border = '3px solid grey';
     }
-
-    // PASSWORD
 
     function validatePassword() {
         var passwordFormat = /^[A-Za-z0-9_-]*$/;
@@ -334,20 +315,18 @@ window.onload = function () {
         if (!validatePassword()) {
             msgContainer[9].classList.remove('hide');
             msgContainer[9].classList.add('error');
-            msgContainer[9].innerHTML = "The password entered is incorrect.";
-            inputPassword.style.border = "3px solid red";
+            msgContainer[9].innerHTML = 'The password entered is incorrect.';
+            inputPassword.style.border = '3px solid red';
         } else {
             msgContainer[9].classList.remove('error');
-            inputPassword.style.border = "3px solid green";
+            inputPassword.style.border = '3px solid green';
         }
     }
 
     function passWordFocus() {
         msgContainer[9].classList.add('hide');
-        inputPassword.style.border = "3px solid grey";
+        inputPassword.style.border = '3px solid grey';
     }
-
-    // REPEAT PASSWORD
 
     function reValidatePassword() {
         if (inputRepeatPassword.value == inputPassword.value) {
@@ -361,24 +340,24 @@ window.onload = function () {
         if (!reValidatePassword()) {
             msgContainer[10].classList.remove('hide');
             msgContainer[10].classList.add('error');
-            msgContainer[10].innerHTML = "The password does not match.";
-            inputRepeatPassword.style.border = "3px solid red";
+            msgContainer[10].innerHTML = 'The password does not match.';
+            inputRepeatPassword.style.border = '3px solid red';
         } else {
             msgContainer[10].classList.remove('error');
-            inputRepeatPassword.style.border = "3px solid green";
+            inputRepeatPassword.style.border = '3px solid green';
         }
     }
 
     function repeatPasswordFocus() {
         msgContainer[10].classList.add('hide');
-        inputRepeatPassword.style.border = "3px solid grey";
+        inputRepeatPassword.style.border = '3px solid grey';
     }
 
-    function createBtnClick (){
+    function createBtnClick() {
         alert('CONGRATULATIONS\n YOUR ACCOUNT HAS BEEN SUCCESSFULLY CREATED' + '\nName: ' + inputName.value + '\nSurname: ' + inputSurname.value + '\nID: ' + inputId.value +
-        '\nDate of Birth: ' + inputDateOfBirth.value + '\nPhone Number: ' + inputPhone.value + '\nAddress: ' +
-        inputAddress.value + '\nCity: ' + inputCity.value + '\nPost Code: ' + inputPostCode.value +
-        '\nEmail: ' + inputEmail.value + '\nPassword: ' + inputPassword.value)
+            '\nDate of Birth: ' + inputDateOfBirth.value + '\nPhone Number: ' + inputPhone.value + '\nAddress: ' +
+            inputAddress.value + '\nCity: ' + inputCity.value + '\nPost Code: ' + inputPostCode.value +
+            '\nEmail: ' + inputEmail.value + '\nPassword: ' + inputPassword.value)
     }
 }
 

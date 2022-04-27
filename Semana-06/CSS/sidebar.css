@@ -8,10 +8,6 @@ aside {
     background-color: #b1b2b6;
 }
 
-aside i {
-    color:#373867;
-    font-size: 15px;
-}
 aside input {
     padding: 3%;
     margin: 10%;
@@ -48,7 +44,7 @@ aside h2 {
 }
 
 .aside-content {
-    padding:50px 20px;
+    padding: 50px 20px;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -64,13 +60,10 @@ aside h2 {
 
 .aside-content i {
     padding-right: 2px;
-    color:#373867;
+    color: #373867;
 }
 
 .aside-line {
     margin-bottom: 10px;
-    border-top:5px solid #aace9b;
+    border-top: 5px solid #aace9b;
 }
-
-
-
