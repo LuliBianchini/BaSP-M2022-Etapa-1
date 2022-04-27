@@ -77,11 +77,11 @@ window.onload = function () {
         var passwordValue = password.value;
         var validPassword = passwordFormat.test(passwordValue);
         if (!validMail) {
-            alert('Email Incorrect:' + emailValue);
+            alert('Email Incorrect: ' + emailValue);
         } else if (!validPassword) {
-            alert('Password incorrect:' + passwordValue);
+            alert('Password incorrect: ' + passwordValue);
         } else if (validMail && validPassword) {
-            alert('CONGRATULATIONS\n YOU HAVE SUCCESSFULLY LOGED IN' + '\nEmail:' + emailValue +
+            alert('CONGRATULATIONS\n YOU HAVE SUCCESSFULLY LOGED IN' + '\nEmail: ' + emailValue +
                 '\nPassword:' + passwordValue)
         }
     }

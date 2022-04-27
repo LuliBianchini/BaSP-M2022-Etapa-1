@@ -75,6 +75,9 @@ form input {
     font-size: 10px;
 }
 
+#home {
+    color:#373867;
+}
 #login {
     padding: 10%;
     width: 100px;
