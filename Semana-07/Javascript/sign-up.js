@@ -422,7 +422,6 @@ window.onload = function () {
                 })
 
     }
-
     function saveLocalStorage() {
         localStorage.setItem('Name', inputName.value);
         localStorage.setItem('Surname', inputSurname.value);
