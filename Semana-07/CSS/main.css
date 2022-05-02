@@ -1,0 +1,257 @@
+
+.reasons-section a, .homepage-section a {
+    padding: 3%;
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    color: #373867;
+    box-shadow: 2px 2px 2px grey;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px grey;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+.line {
+    padding: 3%;
+    width: 60%;
+    border-top: 3.75px solid #373867;
+}
+
+.homepage-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-section h2 {
+    padding: 3%;
+    border-bottom: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #49A37B;
+    text-transform: capitalize;
+}
+
+.homepage-section p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.homepage-section .hp {
+    width: 80%;
+    text-align: center;
+}
+
+.homepage-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.homepage-1 img {
+    padding: 3%;
+    width: 50%;
+    height: 30%;
+}
+
+.homepage-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.homepage-2 p {
+    padding-bottom: 5%;
+}
+
+.homepage-2 img {
+    padding: 3%;
+    width: 60%;
+    height: 30%;
+}
+
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.features-section p {
+    text-align: center;
+}
+
+.features-section ul {
+    padding: 5%;
+    font-size: 14px;
+    line-height: 22px;
+    list-style-type: disc;
+    text-align: left;
+}
+
+.features-section span {
+    font-weight: 700;
+}
+
+.reasons-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reasons-section p {
+    padding: 3%
+}
+
+.reasons-section img {
+    width: 50%;
+    height: 40%;
+    border-radius: 17px;
+}
+
+
+.reasons-blocks-left,
+.reasons-blocks-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.reasons-text {
+    padding: 5%;
+    text-align: center;
+}
+
+.reasons-lines {
+    width: 60%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 0.75px solid #373867;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+}
+
+.send {
+    width: 120px;
+    height: 35px;
+    background-color: #aace9b;
+    border-radius: 3.75px;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    color: #373867;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.reset {
+    width: 80px;
+    height: 35px;
+    background-color: #dadada;
+    border-radius: 3.75px;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    color: #373867;
+    box-shadow: 2px 2px 2px grey
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contact-fields {
+    margin-top: 2%;
+    width: 100%;
+}
+
+.contact-fields input, .contact-fields textarea {
+    width: 97%;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color:#dadada;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 3%;
+}
+
+.contact-fields select {
+    width: 100%;
+    margin-top: 2%;
+    padding: 1%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    color:#dadada;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 3%;
+}
+
+.contact-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #373867;
+    opacity: 80%;
+    color: #ffffff;
+}
+
+.bottom-section h2 {
+    display: none;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.bottom-list ol {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.bottom-list a {
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 22.px;
+    color: #ffffff;
+}
+
+.bottom-list h3 {
+    font-size: 12px;
+}

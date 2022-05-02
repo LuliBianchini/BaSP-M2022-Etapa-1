@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <script src="../Javascript/login.js"></script>
+    <script src="https://kit.fontawesome.com/a45c2b6d49.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+</head>
+
+<body>
+    <header>
+        <i id="burger-menu" class="fa-solid fa-bars"></i>
+        <h1>
+            Trackgenix SA
+        </h1>
+        <a href="https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-06/Views/index.html">
+            <i id="home" class="fa-solid fa-house"></i></a>
+    </header>
+    <aside>
+        <div id="aside-buttons">
+            <input type="search" placeholder="Search..">
+            <a id="sign-up" href="https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-06/Views/sign-up.html"
+                target="_blank">Sign Up
+            </a>
+        </div>
+        <div class="aside-content">
+            <h2>
+                Get in touch
+            </h2>
+            <div class="aside-line">
+            </div>
+            <ul>
+                <li>
+                    <a href="mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        info@trackgenix.com
+                    </a>
+                </li>
+                <li>
+                    <a href="phone">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        123-456789
+                    </a>
+                </li>
+                <li>
+                    <a href="adress">
+                        <i class="fa-solid fa-house"></i>
+                        123 Fake Road #2000 Rosario, Argentina
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div id="form-container">
+            <h2>Log In</h2>
+            <form>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" name="email">
+                    <div class="msg-container"></div>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input id="password" type="password" name="password">
+                    <div class="msg-container"></div>
+                </div>
+                <div id="remember">
+                    <input type="checkbox" value="lsRememberMe" id="rememberMe">
+                    <label for="rememberMe">Remember me</label>
+                </div>
+                <div id="login">
+                    <input id="log-in" type="submit" value="Log In">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-icons">
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://ar.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa-brands fa-facebook"></i></a>
+        </div>
+        <p>
+            Rosario, Argentina
+        </p>
+        <p>
+            Copyright &copy; 2022 Radium Rocket. All rights reserved.
+        </p>
+    </footer>
+</body>
+
+</html>

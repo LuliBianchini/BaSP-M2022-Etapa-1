@@ -1,0 +1,36 @@
+header {
+    border-bottom: 3.75px solid #373867;
+    text-align: center;
+    padding: 3%;
+}
+
+header i {
+    display: inline-block;
+    padding-left: 2%;
+    font-size: 20px;
+    color: #aace9b;
+    text-shadow: 2px 2px 2px grey;
+}
+
+header h1 {
+    display: inline-block;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 45px;
+    font-weight: 700;
+    text-shadow: 2px 2px 2px #373867;
+
+}
+
+#header-line {
+    border-top: 2px solid #aace9b;
+}
+
+#header-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#burger-menu {
+    color: #373867;
+}
