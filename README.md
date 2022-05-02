@@ -19,15 +19,17 @@ In this repository you will find five folders labeled under the name Week-0X, th
 ## *Progress*
 **Week 1:** It was created in Figma a prototype of how it would look the structure and the layout of the project requested.\
 
-**Week 2:** It was created an "index" file where the landing page would be arranged. Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. \
+**Week 2:** It was created an "index" file where the landing page would be arranged. Up to this point the "index" file has only been worked on by using HTML language to be displayed in a web browser but is expected to be assisted by other techonologies and script languages. 
 
-**Week 3:** The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company. \
+**Week 3:** The "index" file created the previous week has been styled by using CSS to resemble the landing page requested by the company. 
 
-**Week 4:** It was designed a responsive layout using the concept Mobile First, making it functional to other screen sizes such as tablets and desktops devices. \
-\
-**Week 5:** It was created a new folder which contains an index.html file and an exercises file. Within the exercises one there are six Javascript files labeled under names that express what  they are about. Each JS file has a series of exercises that deal with different Javascript variables. \
+**Week 4:** It was designed a responsive layout using the concept Mobile First, making it functional to other screen sizes such as tablets and desktops devices. 
 
-**Week 6:** It was created a new folder in which were duplicated the files located in the one from Week 04. There were added six new files to create two new screens. It was added style with CSS and given function to the forms found in each screen using Javascript.\
+**Week 5:** It was created a new folder which contains an index.html file and an exercises file. Within the exercises one there are six Javascript files labeled under names that express what  they are about. Each JS file has a series of exercises that deal with different Javascript variables. 
+
+**Week 6:** It was created a new folder in which were duplicated the files located in the one from Week 04. There were added six new files to create two new screens. It was added style with CSS and given function to the forms found in each screen using Javascript.
+
+**Week 7:** It was created a new folder duplicating the files used in Week 06. It was worked on the Javascript login and sign up files in order to add an HTTP request in the forms created in html. 
  
 
 ## *Pages*
@@ -38,6 +40,10 @@ In this repository you will find five folders labeled under the name Week-0X, th
   * [Homepage](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-06/Views/index.html)
   * [Log In](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-06/Views/login.html) 
   * [Sign Up](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-06/Views/sign-up.html)
+- WEEK 7:
+  * [Homepage](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-07/Views/index.html)
+  * [Log In](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-07/Views/login.html)
+  * [Sign Up](https://lulibianchini.github.io/BaSP-M2022-Etapa-1/Semana-07/Views/sign-up.html)
 
 
 ## *Authors*
