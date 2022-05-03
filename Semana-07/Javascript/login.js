@@ -1,9 +1,8 @@
 window.onload = function () {
     var email = document.getElementById('email');
     var password = document.getElementById('password');
-    var logIn = document.getElementById('log-in')
+    var logIn = document.getElementById('log-in');
     var msgContainer = document.getElementsByClassName('msg-container');
-
 
     email.addEventListener('focus', emailFocus);
     email.addEventListener('blur', emailBlur);

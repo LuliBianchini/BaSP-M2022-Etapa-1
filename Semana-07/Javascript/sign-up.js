@@ -126,13 +126,15 @@ window.onload = function () {
         msgContainer[2].classList.add('hide');
         inputId.style.border = '3px solid grey';
     }
-    var formatDoB = '';
+
     function formatDate(date) {
         var dateArray = date.split('-');
         return dateArray[1] + '/' + dateArray[2] + '/' + dateArray[0];
     }
+    var formatDoB = '';
+
     function validateDoB() {
-        if (new Date(inputDateOfBirth.value).getTime() > new Date().getTime()) {
+        if (new Date(formatDate(inputDateOfBirth.value)).getTime() > new Date().getTime()) {
             return false;
         } else {
             formatDoB = formatDate(inputDateOfBirth.value);
@@ -364,7 +366,7 @@ window.onload = function () {
 
     function completeValidation() {
         return (validateName(inputName.value) && validateName(inputSurname.value) && validateId(inputId.value) &&
-            validateDoB(formatDoB) && validatePhone(inputPhone.value) && validateAdress(inputAddress.value) &&
+            validateDoB(inputDateOfBirth.value) && validatePhone(inputPhone.value) && validateAdress(inputAddress.value) &&
             validateName(inputCity.value) && validatePostCode(inputPostCode.value) && validateEmail(inputEmail) &&
             validatePassword(inputPassword.value) && reValidatePassword(inputRepeatPassword.value));
     }
@@ -381,7 +383,7 @@ window.onload = function () {
             alert('Error: Surname Incorrect');
         } else if (!validateId(inputId.value)) {
             alert('Error: ID Incorrect');
-        } else if (!validateDoB(formatDoB)) {
+        } else if (!validateDoB(inputDateOfBirth.value)) {
             alert('Error: Date of Birth Incorrect');
         } else if (!validatePhone(inputPhone.value)) {
             alert('Error: Phone Number Incorrect');
