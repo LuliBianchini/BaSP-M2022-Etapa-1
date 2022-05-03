@@ -25,7 +25,7 @@ window.onload = function () {
         if (!validateEmail(email.value)) {
             msgContainer[0].classList.remove('hide');
             msgContainer[0].classList.add('error');
-            msgContainer[0].innerHTML = 'Email incorrect';
+            msgContainer[0].innerHTML = 'Incorrect email (does not respond to a valid email format)';
             email.style.border = '3px solid red';
         } else {
             msgContainer[0].classList.remove('error');
@@ -54,7 +54,7 @@ window.onload = function () {
         if (!validatePassword(password.value)) {
             msgContainer[1].classList.remove('hide');
             msgContainer[1].classList.add('error');
-            msgContainer[1].innerHTML = 'Password incorrect';
+            msgContainer[1].innerHTML = 'Incorrect password (must be longer than 7 characters and contain letters and numbers)';
             password.style.border = '3px solid red';
         } else {
             msgContainer[1].classList.remove('error');

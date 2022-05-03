@@ -113,7 +113,7 @@ form input {
 }
 .error {
     font-family: 'Roboto', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     color: red;
     display: flex;
 }

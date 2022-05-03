@@ -63,7 +63,7 @@ window.onload = function () {
         if (!validateName(inputName.value)) {
             msgContainer[0].classList.remove('hide');
             msgContainer[0].classList.add('error');
-            msgContainer[0].innerHTML = 'Invalid Name.';
+            msgContainer[0].innerHTML = 'Invalid Name (must be longer than 3 characters and contain only letters)';
             inputName.style.border = '3px solid red';
         } else {
             msgContainer[0].classList.remove('error');
@@ -80,7 +80,7 @@ window.onload = function () {
         if (!validateName(inputSurname.value)) {
             msgContainer[1].classList.remove('hide');
             msgContainer[1].classList.add('error');
-            msgContainer[1].innerHTML = 'Invalid Surname.';
+            msgContainer[1].innerHTML = 'Invalid Surname (must be longer than 3 characters and contain only letters)';
             inputSurname.style.border = '3px solid red';
         } else {
             msgContainer[1].classList.remove('error');
@@ -114,7 +114,7 @@ window.onload = function () {
         if (!validateId()) {
             msgContainer[2].classList.remove('hide');
             msgContainer[2].classList.add('error');
-            msgContainer[2].innerHTML = 'Invalid ID.';
+            msgContainer[2].innerHTML = 'Invalid ID  (must be longer than 7 characters and contain only numbers)';
             inputId.style.border = '3px solid red';
         } else {
             msgContainer[2].classList.remove('error');
@@ -146,7 +146,7 @@ window.onload = function () {
         if (!validateDoB()) {
             msgContainer[3].classList.remove('hide');
             msgContainer[3].classList.add('error');
-            msgContainer[3].innerHTML = 'Invalid Date of birth.';
+            msgContainer[3].innerHTML = 'Invalid Date of birth (does not respond to a valid date format)';
             inputDateOfBirth.style.border = '3px solid red';
         } else {
             msgContainer[3].classList.remove('error');
@@ -180,7 +180,7 @@ window.onload = function () {
         if (!validatePhone()) {
             msgContainer[4].classList.remove('hide');
             msgContainer[4].classList.add('error');
-            msgContainer[4].innerHTML = 'Invalid Phone Number.';
+            msgContainer[4].innerHTML = 'Invalid Phone Number (must have 7 characters and contain only numbers)';
             inputPhone.style.border = '3px solid red';
         } else {
             msgContainer[4].classList.remove('error');
@@ -220,7 +220,7 @@ window.onload = function () {
         if (!validateAdress()) {
             msgContainer[5].classList.remove('hide');
             msgContainer[5].classList.add('error');
-            msgContainer[5].innerHTML = 'Invalid Adress.';
+            msgContainer[5].innerHTML = 'Invalid Adress (must be longer than 5 characters and contain letters, numbers and have a space in the middle)';
             inputAddress.style.border = '3px solid red';
         } else {
             msgContainer[5].classList.remove('error');
@@ -237,7 +237,7 @@ window.onload = function () {
         if (!validateName(inputCity.value)) {
             msgContainer[6].classList.remove('hide');
             msgContainer[6].classList.add('error');
-            msgContainer[6].innerHTML = 'Invalid city.';
+            msgContainer[6].innerHTML = 'Invalid city (must be longer than 3 characters and contain only letters)';
             inputCity.style.border = '3px solid red';
         } else {
             msgContainer[6].classList.remove('error');
@@ -270,7 +270,7 @@ window.onload = function () {
         if (!validatePostCode()) {
             msgContainer[7].classList.remove('hide');
             msgContainer[7].classList.add('error');
-            msgContainer[7].innerHTML = 'Invalid Post Code.';
+            msgContainer[7].innerHTML = 'Invalid Post Code (must have between 4 and 5 characters and contain only numbers)';
             inputPostCode.style.border = '3px solid red';
         } else {
             msgContainer[7].classList.remove('error');
@@ -298,7 +298,7 @@ window.onload = function () {
         if (!validateEmail()) {
             msgContainer[8].classList.remove('hide');
             msgContainer[8].classList.add('error');
-            msgContainer[8].innerHTML = 'Invalid Email.';
+            msgContainer[8].innerHTML = 'Invalid email (does not respond to a valid email format)';
             inputEmail.style.border = '3px solid red';
         } else {
             msgContainer[8].classList.remove('error');
@@ -326,7 +326,7 @@ window.onload = function () {
         if (!validatePassword()) {
             msgContainer[9].classList.remove('hide');
             msgContainer[9].classList.add('error');
-            msgContainer[9].innerHTML = 'The password entered is incorrect.';
+            msgContainer[9].innerHTML = 'Invalid Password (must be longer than 7 characters and contain letters and numbers)';
             inputPassword.style.border = '3px solid red';
         } else {
             msgContainer[9].classList.remove('error');
@@ -378,25 +378,25 @@ window.onload = function () {
             inputPhone.value + '&address=' + inputAddress.value + '&city=' + inputCity.value + '&zip=' + inputPostCode.value
             + '&email=' + inputEmail.value + '&password=' + inputPassword.value
         if (!validateName(inputName.value)) {
-            alert('Error: Name Incorrect');
+            alert('Error: Invalid Name (must be longer than 3 characters and contain only letters)');
         } else if (!validateName(inputSurname.value)) {
-            alert('Error: Surname Incorrect');
+            alert('Error: Invalid Surname (must be longer than 3 characters and contain only letters)');
         } else if (!validateId(inputId.value)) {
-            alert('Error: ID Incorrect');
+            alert('Error: Invalid ID (must be longer than 7 characters and contain only numbers)');
         } else if (!validateDoB(inputDateOfBirth.value)) {
-            alert('Error: Date of Birth Incorrect');
+            alert('Error: Invalid Date of birth (does not respond to a valid date format)');
         } else if (!validatePhone(inputPhone.value)) {
-            alert('Error: Phone Number Incorrect');
+            alert('Error: Invalid Phone Number (must have 7 characters and contain only numbers)');
         } else if (!validateAdress(inputAddress.value)) {
-            alert('Error: Address Incorrect');
+            alert('Error: Invalid Adress (must be longer than 5 characters and contain letters, numbers and have a space in the middle)');
         } else if (!validateName(inputCity.value)) {
-            alert('Error: City Incorrect');
+            alert('Error: Invalid city (must be longer than 3 characters and contain only letters)');
         } else if (!validatePostCode(inputPostCode.value)) {
-            alert('Error: Post Code Incorrect')
+            alert('Error: Invalid Post Code (must have between 4 and 5 characters and contain only numbers)');
         } else if (!validateEmail(inputEmail.value)) {
-            alert('Error: Email Incorrect');
+            alert('Error: Invalid email (does not respond to a valid email format)');
         } else if (!validatePassword(inputPassword.value)) {
-            alert('Error: Password Incorrect');
+            alert('Error: Invalid Password (must be longer than 7 characters and contain letters and numbers)');
         } else if (completeValidation())
             fetch(URL)
                 .then(function (response) {
