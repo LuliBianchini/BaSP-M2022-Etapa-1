@@ -83,7 +83,7 @@ window.onload = function () {
                 .then(function (response) {
                     console.log(response)
                     if (response.success) {
-                        alert('Congratulations!', response.msg)
+                        alert('Congratulations!\n' + response.msg)
                     } else {
                         console.log('Error', response);
                         alert(response.msg);

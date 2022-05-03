@@ -405,7 +405,7 @@ window.onload = function () {
                 .then(function (response) {
                     console.log(response)
                     if (response.success) {
-                        alert('Congratulations!' + response.msg + '\nName: ' + response.data.name + '\nSurname: ' +
+                        alert('Congratulations!\n' + response.msg + '\nName: ' + response.data.name + '\nSurname: ' +
                             response.data.lastName + '\nID: ' + response.data.dni + '\nDate of Birth: ' +
                             response.data.dob + '\nPhone Number: ' + response.data.phone + '\nAddress: ' +
                             response.data.address + '\nCity: ' + response.data.city + '\nPost Code: ' +
